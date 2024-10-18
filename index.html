@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JoeBLog landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Adventz </title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JoeBLog main styles -->
+	<link rel="stylesheet" href="assets/css/joeblog.css">
+
+   
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+            </style>
+</head>
+
+
+
+<!-- <script>
+    const images = [
+      'public_html/assets/imgs/banner.jpg',
+      '../imgs/banner2.jpg',
+      '../imgs/banner3.jpg'
+    ];
+  
+    let currentIndex = 0;
+  
+    function changeBannerImage() {
+      const header = document.querySelector('.page-header');
+      header.style.backgroundImage = `url(${images[currentIndex]})`;
+      currentIndex = (currentIndex + 1) % images.length;
+    }
+  
+    // Change banner image every 2 seconds
+    setInterval(changeBannerImage, 2000);
+  
+    // Initial load
+    document.addEventListener('DOMContentLoaded', changeBannerImage);
+  </script> -->
+  
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- page First Navigation -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/imgs/logoad.png" alt="">
+            </a>
+            <div class="socials">
+                <a href="javascript:void(0)"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)"><i class="ti-twitter"></i></a>
+                <a href="javascript:void(0)"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)"><i class="ti-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of First Navigation -->
+
+    <!-- Page Second Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light bg-white sticky-top">
+        <div class="container">
+            <!-- Logo section -->
+            <!-- <a class="navbar-brand" href="index.html">
+                <img src="./assets/imgs/logoad.png" alt="Logo" width="auto" height="auto">
+            </a> -->
+    
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="no-sidebar.html">gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacts.html">Contacts</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav ml-auto">
+                    <!-- <li class="nav-item">
+                        <a href="components.html" class="ml-4 btn btn-dark mt-1 btn-sm">Components</a>
+                    </li> -->
+                </div> 
+            </div>
+        </div>
+    </nav>
+
+
+    <style>
+        .header-text {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff;
+            padding: 20px;
+        }
+        
+        /* Styles for larger screens (laptops and desktops) */
+        @media (min-width: 769px) {
+            .header-text {
+                font-size: 36px; /* Larger font size for laptops */
+                padding: 30px;   /* More padding for larger screens */
+                color: #ffffff;  /* Change text color for larger screens */
+            }
+        }
+        
+        /* Styles for smaller screens (mobile devices) */
+        @media (max-width: 768px) {
+            .header-text {
+                font-size: 24px; /* Smaller font size for mobile */
+                padding: 15px;   /* Less padding for smaller screens */
+                color: #ffffff;  /* Change text color for mobile */
+            }
+        }
+        
+    </style>
+    
+    <!-- End Of Page Second Navigation -->
+    
+    <!-- page-header -->
+    <header class="page-header">
+     
+        <div class="header-text">Welcome to Adventz</div>
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="https://getvectorlogo.com/wp-content/uploads/2018/12/asian-paints-vector-logo.png" alt="Company 1" class="logo rounded-img">
+                <img src="https://media.assettype.com/TNIE%2Fimport%2F2021%2F8%2F2%2Foriginal%2FHDFC.jpg" alt="Company 2" class="logo rounded-img">
+                <img src="https://www.fmradios.in/wp-content/uploads/2021/12/Radio-Mirchi-USA-Live-Streaming-Online.jpg" alt="Company 3" class="logo rounded-img">
+                <img src="https://images.indianexpress.com/2016/03/airtel-main1.jpg?w=414" alt="Company 4" class="logo rounded-img">
+
+                <img src="https://getvectorlogo.com/wp-content/uploads/2018/12/asian-paints-vector-logo.png" alt="Company 1" class="logo rounded-img">
+                <img src="https://media.assettype.com/TNIE%2Fimport%2F2021%2F8%2F2%2Foriginal%2FHDFC.jpg" alt="Company 2" class="logo rounded-img">
+                <img src="https://www.fmradios.in/wp-content/uploads/2021/12/Radio-Mirchi-USA-Live-Streaming-Online.jpg" alt="Company 3" class="logo rounded-img">
+                <img src="https://images.indianexpress.com/2016/03/airtel-main1.jpg?w=414" alt="Company 4" class="logo rounded-img">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSasfmHLTFJePjNLzB_LVdsZNfz_xwVpan3Cg&s" alt="Company 4" class="logo rounded-img">
+                <img src="https://apiexcellent.com/images/radio/product/bigfm927-radio10422.webp" alt="Company 4" class="logo rounded-img">
+              
+
+               
+
+                <!-- Add more logos as needed -->
+            </div>
+        </div>
+    </header>
+    <div id="logo-scroll-container">
+        <h1 class="clients-heading">Our Clients</h1>
+        <div class="logo-scroll">
+            <img src="https://getvectorlogo.com/wp-content/uploads/2018/12/asian-paints-vector-logo.png" alt="Company 1" class="logo rounded-img">
+            <img src="https://media.assettype.com/TNIE%2Fimport%2F2021%2F8%2F2%2Foriginal%2FHDFC.jpg" alt="Company 2" class="logo rounded-img">
+            <img src="https://www.fmradios.in/wp-content/uploads/2021/12/Radio-Mirchi-USA-Live-Streaming-Online.jpg" alt="Company 3" class="logo rounded-img">
+            <img src="https://images.indianexpress.com/2016/03/airtel-main1.jpg?w=414" alt="Company 4" class="logo rounded-img">
+            <img src="https://getvectorlogo.com/wp-content/uploads/2018/12/asian-paints-vector-logo.png" alt="Company 1" class="logo rounded-img">
+            <img src="https://media.assettype.com/TNIE%2Fimport%2F2021%2F8%2F2%2Foriginal%2FHDFC.jpg" alt="Company 2" class="logo">
+            <img src="https://www.fmradios.in/wp-content/uploads/2021/12/Radio-Mirchi-USA-Live-Streaming-Online.jpg" alt="Company 3" class="logo rounded-img">
+            <img src="https://images.indianexpress.com/2016/03/airtel-main1.jpg?w=414" alt="Company 4" class="logo rounded-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSasfmHLTFJePjNLzB_LVdsZNfz_xwVpan3Cg&s" alt="Company 5" class="logo rounded-img">
+            <img src="https://apiexcellent.com/images/radio/product/bigfm927-radio10422.webp" alt="Company 6" class="logo rounded-img">
+        </div>
+    </div>
+    
+   <style>
+
+    #logo-scroll-container {
+        display: none; /* Default state is hidden */
+    }
+    
+    @media (max-width: 768px) {
+        #logo-scroll-container {
+            display: block; /* Show on small screens */
+        }
+    }
+    
+   
+    .sidebar {
+        display: block; /* Default display for larger screens */
+    }
+    
+    @media (max-width: 768px) {
+        .sidebar {
+            display: none; /* Hide sidebar on smaller screens */
+        }
+    }
+
+    @media (min-width: 769px) {
+        #logo-scroll-container{
+            display: none; /* Hide sidebar on larger screens */
+        }
+    }
+    
+
+    #logo-scroll-container {
+        overflow: hidden; /* Hide the scrollbar */
+        white-space: nowrap; /* Keep logos in a single row */
+        background-color: #f8f9fa; /* Light background */
+        padding: 5px 2px; /* Padding for top and bottom */
+    }
+    
+    .logo-scroll {
+        display: inline-flex; /* Aligns logos in a row */
+        gap: 20px; /* Space between logos */
+    }
+    
+    .logo {
+        width: 120px; /* Adjust size */
+        height: 80px;
+        transition: transform 0.3s ease; /* Smooth hover effect */
+        opacity: 1; /* Slight transparency */
+    }
+    
+    .logo:hover {
+        transform: scale(1.1); /* Zoom effect on hover */
+        opacity: 1; /* Full opacity on hover */
+    }
+    
+    /* Hide the scrollbar across all browsers */
+    .logo-scroll::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari, and Opera */
+    }
+    
+    .logo-scroll {
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+    
+    
+    
+    .clients-heading {
+        position: absolute; /* Positioning the heading */
+        top: -40px; /* Adjusting position above the logos */
+        left: 50%;
+        transform: translateX(-50%); /* Centering the heading */
+        font-size: 2rem; /* Responsive font size */
+        color: #333;
+        background-color: #212529; /* Dark background for heading */
+        color: #fff;
+        padding: 10px 20px; /* Padding for heading */
+        border-radius: 4px; /* Rounded corners */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Adding shadow for depth */
+    }
+    
+    @media (max-width: 768px) {
+        .logo {
+            width: 100px; /* Smaller size for mobile */
+        }
+    
+        .clients-heading {
+            font-size: 1.5rem; /* Adjust font size for mobile */
+            padding: 10px; /* Adjust padding */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .logo {
+            width: 80px; /* Even smaller size for very small screens */
+        }
+    
+        .clients-heading {
+            font-size: 1.25rem; /* Smaller font size */
+            padding: 8px; /* Adjust padding */
+        }
+    }
+    
+    
+   </style>
+
+        
+    
+      
+    <!-- end of page header -->
+
+    <div class="container">
+        <section>
+            <div class="feature-posts">
+                <a href="./index.html" class="feature-post-item">                       
+                    <span>visit gallery </span>
+                </a>
+                <a href="single-post.html" class="feature-post-item">
+                    <img src="assets/imgs/12 (1).JPG" class="w-100" alt="">
+                    <div class="feature-post-caption">Sprite</div>
+                </a>
+                <a href="single-post.html" class="feature-post-item">
+                    <img src="assets/imgs/12 (20).jpg" class="w-100" alt="">
+                    <div class="feature-post-caption">Stall</div>
+                </a>
+                <a href="single-post.html" class="feature-post-item">
+                    <img src="assets/imgs/12 (3).JPG" class="w-100" alt="">
+                    <div class="feature-post-caption">Enter</div>
+                </a>
+                <a href="single-post.html" class="feature-post-item">
+                    <img src="assets/imgs/12 (9).jpg" class="w-100" alt="">
+                    <div class="feature-post-caption">Adv</div>
+                </a>
+            </div>
+        </section>
+        <hr>
+        <div class="page-container">
+            <div class="page-content">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h5 class="card-title">Refreshing Success: The Sprite Green Van Event</h5> 
+                        <small class="small text-muted">January 24 2019 
+                            <span class="px-2">-</span>
+                            <a href="#" class="text-muted">32 Comments</a>
+                        </small>
+                    </div>
+                    <div class="card-body">
+                        <div class="blog-media">
+                            <img src="assets/imgs/12 (1).jpg" alt="" class="w-100  rounded-img">
+                            <a href="#" class="badge badge-primary">#Sprite</a>     
+                        </div>
+                        
+                        <p class="my-3">
+                            The recent Sprite event was a huge success, featuring a fully customized green Sprite van that attracted attention and excitement. The van was designed to embody the vibrant spirit of Sprite, making it a perfect backdrop for the event. With engaging activities and promotions, we sold over 1,000 Sprite beverages, delighting attendees and showcasing the refreshing taste of Sprite. This event not only boosted brand visibility but also created memorable experiences for fans, reinforcing Sprite's position as a favorite among consumers.</p>
+                    </div>
+                    <style>
+                        .rounded-img {
+                            border-radius: 15px; /* Adjust the value for more or less curve */
+                        }
+                        
+                    </style>
+                    
+                    <div class="card-footer d-flex justify-content-between align-items-center flex-basis-0">
+                        <button class="btn btn-primary circle-35 mr-4"><i class="ti-back-right"></i></button>
+                        <!----> 
+                        <a href="#" class="text-dark small text-muted"></a>
+                    </div>                  
+                </div>
+                <hr>
+                <div class="row">                       
+                    <div class="col-lg-6">
+                        <div class="card text-center mb-5">
+                            <div class="card-header p-0">                                   
+                                <div class="blog-media">
+                                    <img src="assets/imgs/12 (14).jpg" alt="" class="w-100 rounded-img" >
+                                    <a href="#" class="badge badge-primary">#Adventz Media Discount Card </a>        
+                                </div>  
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="card-title mb-2">Adventz Media Discount Card </h5>    
+                                <small class="small text-muted">January 20 2019 
+                                    <span class="px-2">-</span>
+                                    <a href="#" class="text-muted">34 Comments</a>
+                                </small>
+                                <p class="my-2">Unlock exclusive offers with the Adventz Media Discount Card! Whether you’re planning a party, corporate event, or a photoshoot, our discount card gives you access to fantastic savings across all our services, including photography, event management, and more.</p>
+                            </div>
+                            
+                            <div class="card-footer p-0 text-center">
+                                <!-- --> 
+                            </div>                  
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card text-center mb-5">
+                            <div class="card-header p-0">                                   
+                                <div class="blog-media">
+                                    <img src="assets/imgs/12 (4).jpg" alt="" class="w-100 rounded-img">
+                                    <a href="#" class="badge badge-primary">#The Freedom Oil </a>        
+                                </div>  
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="card-title mb-2">The Freedom Oil Event</h5> 
+                                <small class="small text-muted">January 19 2019 
+                                    <span class="px-2">-</span>
+                                    <a href="#" class="text-muted">64 Comments</a>
+                                </small>
+                                <p class="my-2">Event Description:
+
+                                    Join us for the Freedom Oil Event, a vibrant celebration of culinary creativity and health! This event is dedicated to showcasing the versatility and benefits of Freedom Oil, a premium cooking oil that enhances flavor while promoting a healthier lifestyle.</p>
+                            </div>
+                            
+                            <div class="card-footer p-0 text-center">
+                               <!-- -->
+                            </div>                  
+                        </div>
+                    </div>
+                </div>
+                <div class="row">                       
+                    <div class="col-lg-6">
+                        <div class="card text-center mb-5">
+                            <div class="card-header p-0">                                   
+                                <div class="blog-media">
+                                    <img src="assets/imgs/12 (5).jpg" alt="" class="w-100 rounded-img">
+                                    <a href="#" class="badge badge-primary">#The Tangles</a>       
+                                </div>  
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="card-title mb-2">The Tangles</h5>   
+                                <small class="small text-muted">January 17 2019 
+                                    <span class="px-2">-</span>
+                                    <a href="#" class="text-muted">93 Comments</a>
+                                </small>
+                                <p class="my-2">The Tangles Chips Event is a fun-filled gathering celebrating the launch of Tangles' latest flavors, bringing together chip lovers for an exciting experience. Attendees can enjoy live cooking demonstrations, sample unique chip varieties, participate in contests, and win prizes.</p>
+                            </div>
+                            
+                            <div class="card-footer p-0 text-center">
+                               <!-- -->
+                            </div>                  
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card text-center mb-5">
+                            <div class="card-header p-0">                                   
+                                <div class="blog-media">
+                                    <img src="assets/imgs/12 (15).jpg" alt="" class="w-100 rounded-img">
+                                    <a href="#" class="badge badge-primary">#lorem</a>      
+                                </div>  
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="card-title mb-2">Stage</h5>  
+                                <small class="small text-muted">January 15 2019 
+                                    <span class="px-2">-</span>
+                                    <a href="#" class="text-muted">112 Comments</a>
+                                </small>
+                                <p class="my-2">. I can help refine the design or provide some creative suggestions for the layout and content.</p>
+                            </div>
+                            
+                            <div class="card-footer p-0 text-center">
+                               <!-- -->
+                            </div>                  
+                        </div>
+                    </div>
+                </div>
+                <div class="row">                       
+                    <div class="col-lg-6">
+                        <div class="card text-center mb-5">
+                            <div class="card-header p-0">                                   
+                                <div class="blog-media">
+                                    <img src="assets/imgs/12 (7).jpg" alt="" class="w-100 rounded-img">
+                                    <a href="#" class="badge badge-primary">#98.3 FM!</a>     
+                                </div>  
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="card-title mb-2"> 98.3 FM!</h5>    
+                                <small class="small text-muted">January 14 2019 
+                                    <span class="px-2">-</span>
+                                    <a href="#" class="text-muted">120 Comments</a>
+                                </small>
+                                <p class="my-2"> To promote 98.3 FM! If you'd like assistance with presenting the design, creating visuals, or formatting content related to the truck advertisement, feel free to share more details. I can help refine the design or provide some creative suggestions for the layout and content.
+
+
+
+
+
+
+                                </p>
+                            </div>
+                            
+                            <div class="card-footer p-0 text-center">
+                               <!-- -->
+                            </div>                  
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card text-center mb-5">
+                            <div class="card-header p-0">                                   
+                                <div class="blog-media">
+                                    <img src="assets/imgs/12 (8).jpg" alt="" class="w-100 rounded-img">
+                                    <a href="#" class="badge badge-primary">#Honda</a>       
+                                </div>  
+                            </div>
+                            <div class="card-body px-0">
+                                <h5 class="card-title mb-2">Honda</h5> 
+                                <small class="small text-muted">January 10 2019 
+                                    <span class="px-2">-</span>
+                                    <a href="#" class="text-muted">143 Comments</a>
+                                </small>
+                                <p class="my-2">That sounds like a creative way to advertise Honda bikes! Wrapping a van with posters is an eye-catching mobile ad strategy. If you need any help showcasing that design or making it more visually appealing for your project, feel free to ask!</p>
+                            </div>
+                            
+                            <div class="card-footer p-0 text-center">
+                               <!-- -->
+                            </div>                  
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-block my-4">Load More Posts</button>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="page-sidebar text-center">
+                <h6 class="sidebar-title section-title mb-4 mt-3">About</h6>
+                <img src="assets/imgs/logoad.png" alt="" class="" height="80px" width="120x">
+                <div class="socials mb-3 mt-2">
+                    <a href="javascript:void(0)"><i class="ti-facebook"></i></a>
+                    <a href="javascript:void(0)"><i class="ti-twitter"></i></a>
+                    <a href="javascript:void(0)"><i class="ti-pinterest-alt"></i></a>
+                    <a href="javascript:void(0)"><i class="ti-instagram"></i></a>
+                    <a href="javascript:void(0)"><i class="ti-youtube"></i></a>
+                </div>
+                <h6>Adventz Media: Your Trusted Partner in Marketing and Media Solutions
+                    </h6>
+                <p>At Adventz Media, we pride ourselves on being a leading media and marketing company dedicated to delivering exceptional results for our clients. With a strong commitment to innovation and creativity, we offer a wide range of services tailored to meet the unique needs of businesses of all sizes.</p>
+                
+
+                <h6 class="sidebar-title mt-5 mb-4">Newsletter</h6>
+                <form action="">
+                    <div class="subscribe-wrapper">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                        <button type="submit" class="btn btn-primary"><i class="ti-location-arrow"></i></button>
+                    </div>
+                </form>
+
+                <h6 class="sidebar-title mt-5 mb-4">Tags</h6>
+                <a href="javascript:void(0)" class="badge badge-primary m-1">#EventManagement</a>
+                <a href="javascript:void(0)" class="badge badge-primary m-1">#Photography</a>
+                <a href="javascript:void(0)" class="badge badge-primary m-1">#MediaCoverage</a>
+                <a href="javascript:void(0)" class="badge badge-primary m-1">#EventPlanning</a>
+                <a href="javascript:void(0)" class="badge badge-primary m-1">#AllRounderEvents</a>
+                <a href="javascript:void(0)" class="badge badge-primary m-1">#CorporateEvents</a>
+                <a href="javascript:void(0)" class="badge badge-primary m-1">#CreativeEvents</a>
+                <a href="javascript:void(0)" class="badge badge-primary m-1">#EventPhotography</a>
+                <a href="javascript:void(0)" class="badge badge-primary m-1">#SocialMediaEvents</a>
+                <a href="javascript:void(0)" class="badge badge-primary m-1">#EventSuccess</a>
+                
+                <h6 class="sidebar-title mt-5 mb-4">Instagram</h6>
+                <div class="row px-3">
+                    <div class="col-4 p-1 figure">
+                        <a href="#" class="figure-img">
+                            <img src="assets/imgs/12 (20).jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-4 p-1 figure">
+                        <a href="#" class="figure-img">
+                            <img src="assets/imgs/12 (19).jpg" alt="" class="w-100 m-0">
+                        </a>
+                    </div>  
+                    <div class="col-4 p-1 figure">
+                        <a href="#" class="figure-img">
+                            <img src="assets/imgs/12 (18).jpg" alt="" class="w-100">
+                        </a>
+                    </div>
+                    <div class="col-4 p-1 figure">
+                        <a href="#" class="figure-img">
+                            <img src="assets/imgs/12 (17).jpg" alt="" class="w-100 m-0">
+                        </a>
+                    </div>  
+                    <div class="col-4 p-1 figure">
+                        <a href="#" class="figure-img">
+                            <img src="assets/imgs/12 (16).jpg" alt="" class="w-100">
+                        </a>
+                    </div>
+                    <div class="col-4 p-1 figure">
+                        <a href="#" class="figure-img">
+                            <img src="assets/imgs/12 (15).jpg" alt="" class="w-100 m-0">
+                        </a>
+                    </div>                          
+                </div>  
+
+                <figure class="figure mt-5">
+                    <a href="single-post.html" class="figure-img">
+                        <img src="assets/imgs/12 (2).jpg" alt="" class="w-100">
+                        <figcaption class="figcaption">Adventz</figcaption>
+                    </a>
+                </figure>
+
+                <h6 class="sidebar-title mt-5 mb-4">Popular Posts</h6>
+                <div class="card mb-4">
+                    <a href="single-post.html" class="overlay-link"></a>
+                    <div class="card-header p-0">                                   
+                        <div class="blog-media">
+                            <img src="assets/imgs/12 (8).jpg" alt="" class="w-100 rounded-img" >
+                            <a href="#" class="badge badge-primary">#Lorem</a>      
+                        </div>  
+                    </div>
+                    <div class="card-body px-0">
+                        <h5 class="card-title mb-2">Corporis Placeat</h5>   
+                        <small class="small text-muted"><i class="ti-calendar pr-1"></i> January 24 2019
+                        </small>
+                        <p class="my-2">consectetur adipisicing Cum veritatis minus iustorpo cupiditate voluptas ...</p>
+                    </div>      
+                </div>
+
+                <div class="media text-left mb-4">
+                    <a href="single-post.html" class="overlay-link"></a>
+                    <img class="mr-3" src="assets/imgs/12 (7).jpg" width="100px" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h6 class="mt-0">Nobis Mollitia</h6>
+                        <p class="mb-2"> deserunt quisqua...</p>
+                        <p class="text-muted small"><i class="ti-calendar pr-1"></i>  January 02 2019</p>
+                    </div>
+                </div>
+                <div class="media text-left mb-4">
+                    <a href="single-post.html" class="overlay-link"></a>
+                    <img class="mr-3" src="assets/imgs/12 (6).jpg" width="100px" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h6 class="mt-0">Officiis Laborum</6>
+                        <p class="mb-2"> deserunt quisqua...</p>                            
+                        <p class="text-muted small"><i class="ti-calendar pr-1"></i>  January 10 2019</p>
+                    </div>
+                </div>
+                <div class="media text-left mb-4">
+                    <a href="single-post.html" class="overlay-link"></a>
+                    <img class="mr-3" src="assets/imgs/12 (5).jpg" width="100px" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h6 class="mt-0">Sapiente fugit vero</h6>
+                        <p class="mb-2"> deserunt ard quisqua...</p>                        
+                        <p class="text-muted small"><i class="ti-calendar pr-1"></i>  January 04 2019</p>
+                    </div>
+                </div>  
+                <!-- <div class="ad-card d-flex text-center align-items-center justify-content-center">
+                    <span href="#" class="font-weight-bold">ADS</span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="instagram-wrapper mt-5">
+        <div class="ig-id">
+            <a href="javascript:void(0)">Follow @Adventz On Instagram</a>
+        </div>
+        <!-- <a href="javascript:void(0)" class="insta-item">
+            <img src="assets/imgs/12 (10).jpg" alt="" class="w-100">
+            <div class="overlay">
+                <span>
+                    <i class="ti-heart"></i> 23
+                </span>
+                <span>
+                    <i class="ti-comment"></i> 12
+                </span>
+            </div>
+        </a> -->
+        <a href="javascript:void(0)" class="insta-item">
+            <img src="assets/imgs/12 (9).jpg" alt="" class="w-100">
+            <div class="overlay">
+                <span>
+                    <i class="ti-heart"></i> 23
+                </span>
+                <span>
+                    <i class="ti-comment"></i> 12
+                </span>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="insta-item">
+            <img src="assets/imgs/12 (8).jpg" alt="" class="w-100">
+            <div class="overlay">
+                <span>
+                    <i class="ti-heart"></i> 23
+                </span>
+                <span>
+                    <i class="ti-comment"></i> 12
+                </span>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="insta-item">
+            <img src="assets/imgs/12 (7).jpg" alt="" class="w-100">
+            <div class="overlay">
+                <span>
+                    <i class="ti-heart"></i> 23
+                </span>
+                <span>
+                    <i class="ti-comment"></i> 12
+                </span>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="insta-item">
+            <img src="assets/imgs/12 (6).jpg" alt="" class="w-100">
+            <div class="overlay">
+                <span>
+                    <i class="ti-heart"></i> 23
+                </span>
+                <span>
+                    <i class="ti-comment"></i> 12
+                </span>
+            </div>
+        </a>
+        <a href="javascript:void(0)" class="insta-item">
+            <img src="assets/imgs/12 (5).jpg" alt="" class="w-100">
+            <div class="overlay">
+                <span>
+                    <i class="ti-heart"></i> 23
+                </span>
+                <span>
+                    <i class="ti-comment"></i> 12
+                </span>
+            </div>
+        </a>
+    </div>
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
+                    <img src="assets/imgs/logoad.png" alt="" class="logo" height="40px" width="80px">
+                </div>
+                <div class="col-md-9 text-center text-md-right">
+                    <div class="socials">
+                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-facebook pr-1"></i> </a>
+                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-twitter pr-1"></i> </a>
+                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-pinterest-alt pr-1"></i> </a>
+                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-instagram pr-1"></i> </a>
+                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-youtube pr-1"></i> </a>
+                    </div>
+                </div>  
+            </div>
+            <p class="border-top mb-0 mt-4 pt-3 small">&copy; <script>document.write(new Date().getFullYear())</script>,  Created By <a href="https://images.pexels.com/photos/28972138/pexels-photo-28972138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="text-muted font-weight-bold" target="_blank">7 Creators</a>  All rights reserved </p> 
+        </div>      
+    </footer>
+    <!-- End of Page Footer -->
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- JoeBLog js -->
+    <script src="assets/js/joeblog.js"></script>
+
+</body>
+</html>

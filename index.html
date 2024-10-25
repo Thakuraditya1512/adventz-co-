@@ -3,14 +3,80 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with JoeBLog landing page.">
+    <meta name="description" content="Start your development with 7 creators">
     <meta name="author" content="Devcrud">
     <title>Adventz </title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + JoeBLog main styles -->
 	<link rel="stylesheet" href="assets/css/joeblog.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
+    <style>
+        /* Smooth transition CSS */
+        body.loaded .intro {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1s ease-out;
+        }
+
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full screen intro */
+        .intro {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 1s ease-out;
+        }
+
+        /* Logo with blur effect */
+        .intro img {
+            width: 150px;
+            height: auto;
+            filter: blur(20px);
+            opacity: 1;
+            animation: unblur 3s ease-out forwards;
+        }
+
+        /* Unblur animation */
+        @keyframes unblur {
+            0% {
+                filter: blur(20px);
+                opacity: 1;
+            }
+            100% {
+                filter: blur(0);
+                opacity: 1;
+            }
+        }
+
+        /* Main content - hidden initially */
+        .content {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1s ease-out;
+        }
+
+        /* When page is loaded, content becomes visible */
+        body.loaded .content {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
    
 
         <style>
@@ -43,19 +109,20 @@
   </script> -->
   
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    
+    <div class="intro">
+        <img src="./assets/imgs/1212.png" alt="Logo">
+    </div>
     <!-- page First Navigation -->
     <nav class="navbar navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./assets/imgs/logoad.png" alt="">
+                <img src="./assets/imgs/1212.png" alt="">
             </a>
             <div class="socials">
-                <a href="javascript:void(0)"><i class="ti-facebook"></i></a>
-                <a href="javascript:void(0)"><i class="ti-twitter"></i></a>
-                <a href="javascript:void(0)"><i class="ti-pinterest-alt"></i></a>
-                <a href="javascript:void(0)"><i class="ti-instagram"></i></a>
-                <a href="javascript:void(0)"><i class="ti-youtube"></i></a>
+                <a href="https://www.facebook.com/share/1wzxVG8Vbr1dvMXo/?mibextid=LQQJ4d" class="font-weight-bold text-muted mr-4"><i class="ti-facebook pr-1"></i> </a>
+               
+                <a href="https://www.instagram.com/adventzentertainment?igsh=enFnMXphYXBkNDFu&utm_source=qr" class="font-weight-bold text-muted mr-4"><i class="ti-instagram pr-1"></i> </a>
+                <a href="https://youtube.com/@adventzadvertisementsevent4529?si=yTdW4RFhNWa_lZpv" class="font-weight-bold text-muted mr-4"><i class="ti-youtube pr-1"></i> </a>
             </div>
         </div>
     </nav>
@@ -79,34 +146,23 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="no-sidebar.html">gallery</a>
+                        <a class="nav-link" href="./whatwedo.html">What we do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gallary.html">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Contacts.html">Contacts</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
+                    <!-- Login Link -->
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="nav-link" href="https://sso.godaddy.com/?app=email&realm=pass&target=login&return_path=%252FoptionsSignatures.php&plid=1">Login</a>
                     </li>
                 </ul>
-                <div class="navbar-nav ml-auto">
-                    <!-- <li class="nav-item">
-                        <a href="components.html" class="ml-4 btn btn-dark mt-1 btn-sm">Components</a>
-                    </li> -->
-                </div> 
             </div>
         </div>
     </nav>
+    
 
 
     <style>
@@ -503,13 +559,12 @@
             <!-- Sidebar -->
             <div class="page-sidebar text-center">
                 <h6 class="sidebar-title section-title mb-4 mt-3">About</h6>
-                <img src="assets/imgs/logoad.png" alt="" class="" height="80px" width="120x">
+                <img src="assets/imgs/logoad.png" alt="" class="" height="auto" width="120px">
                 <div class="socials mb-3 mt-2">
-                    <a href="javascript:void(0)"><i class="ti-facebook"></i></a>
-                    <a href="javascript:void(0)"><i class="ti-twitter"></i></a>
-                    <a href="javascript:void(0)"><i class="ti-pinterest-alt"></i></a>
-                    <a href="javascript:void(0)"><i class="ti-instagram"></i></a>
-                    <a href="javascript:void(0)"><i class="ti-youtube"></i></a>
+                    <a href="https://www.facebook.com/share/1wzxVG8Vbr1dvMXo/?mibextid=LQQJ4d" class="font-weight-bold text-muted mr-4"><i class="ti-facebook pr-1"></i> </a>
+               
+                    <a href="https://www.instagram.com/adventzentertainment?igsh=enFnMXphYXBkNDFu&utm_source=qr" class="font-weight-bold text-muted mr-4"><i class="ti-instagram pr-1"></i> </a>
+                    <a href="https://youtube.com/@adventzadvertisementsevent4529?si=yTdW4RFhNWa_lZpv" class="font-weight-bold text-muted mr-4"><i class="ti-youtube pr-1"></i> </a>
                 </div>
                 <h6>Adventz Media: Your Trusted Partner in Marketing and Media Solutions
                     </h6>
@@ -700,26 +755,39 @@
         </a>
     </div>
 
+
+
     <!-- Page Footer -->
     <footer class="page-footer">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
-                    <img src="assets/imgs/logoad.png" alt="" class="logo" height="40px" width="80px">
+                    <img src="assets/imgs/logoad.png" alt="" class="logo" height="80px" width="120px">
                 </div>
                 <div class="col-md-9 text-center text-md-right">
                     <div class="socials">
-                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-facebook pr-1"></i> </a>
-                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-twitter pr-1"></i> </a>
-                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-pinterest-alt pr-1"></i> </a>
-                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-instagram pr-1"></i> </a>
-                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-youtube pr-1"></i> </a>
+                        <a href="https://www.facebook.com/share/1wzxVG8Vbr1dvMXo/?mibextid=LQQJ4d" class="font-weight-bold text-muted mr-4"><i class="ti-facebook pr-1"></i> </a>
+               
+                        <a href="https://www.instagram.com/adventzentertainment?igsh=enFnMXphYXBkNDFu&utm_source=qr" class="font-weight-bold text-muted mr-4"><i class="ti-instagram pr-1"></i> </a>
+                        <a href="https://youtube.com/@adventzadvertisementsevent4529?si=yTdW4RFhNWa_lZpv" class="font-weight-bold text-muted mr-4"><i class="ti-youtube pr-1"></i> </a>
                     </div>
                 </div>  
             </div>
             <p class="border-top mb-0 mt-4 pt-3 small">&copy; <script>document.write(new Date().getFullYear())</script>,  Created By <a href="https://images.pexels.com/photos/28972138/pexels-photo-28972138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="text-muted font-weight-bold" target="_blank">7 Creators</a>  All rights reserved </p> 
         </div>      
     </footer>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.body.classList.add('loaded');
+            }, 3000); // 3 second delay for the blur effect
+        };
+    </script>
+
+
+    
+   
     <!-- End of Page Footer -->
 
 	<!-- core  -->

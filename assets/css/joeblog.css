@@ -11591,7 +11591,7 @@ textarea.form-control {
 }
 
 .navbar .navbar-brand img {
-  width: 70px;
+  width: 130px;
 }
 
 .pagination .page-item {
@@ -11688,7 +11688,7 @@ textarea.form-control {
 }
 
 .page-footer .logo {
-  width: 100px;
+  width: auto;
 }
 
 .page-header {

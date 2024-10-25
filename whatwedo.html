@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Do | Adventz</title>
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/joeblog.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css"> <!-- Your own CSS file -->
+
+    <style>
+        /* Body styling */
+        body {
+            font-family: 'PT Serif', serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+            color: #fff;
+            text-align: center;
+        }
+
+    
+
+        /* Services Section */
+        .services-section {
+            background-color: #5eedf8;
+            padding: 40px 0;
+        }
+
+        /* Grid layout for "What We Do" */
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Card style */
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect */
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-icon {
+            font-size: 40px;
+            color: #ff6347;
+            margin-bottom: 20px;
+        }
+
+        .service-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .service-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .service-button {
+            font-size: 14px;
+            color: #ff6347;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .service-button:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .services-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .services-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .footer h6 {
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .footer p {
+            color: #6c757d;
+        }
+        
+        .footer .list-inline-item a {
+            color: #495057;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        
+        .footer .list-inline-item a:hover {
+            color: #007bff;
+        }
+
+
+ /* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.services-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Service Cards Styling */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: #3a7bd5;
+    margin-bottom: 1rem;
+}
+
+.service-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.service-description {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-description li {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 0.3rem 0;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect to show all points */
+.service-card:hover .service-description li {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.service-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #3a7bd5;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+    background-color: #2f6cc0;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .service-card {
+        padding: 1rem;
+    }
+
+    .service-title {
+        font-size: 1.1rem;
+    }
+
+    .service-description li {
+        font-size: 0.85rem;
+    }
+
+    .service-icon {
+        font-size: 2rem;
+    }
+
+    .service-button {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+   <!-- First Navigation (Logo and Socials) -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/imgs/1212.png" alt="Adventz Logo" width="130px" >
+        </a>
+        <div class="socials">
+            <a href="https://www.facebook.com/share/1wzxVG8Vbr1dvMXo/?mibextid=LQQJ4d" class="font-weight-bold text-muted mr-4">
+                <i class="ti-facebook pr-1"></i>
+            </a>
+            <a href="https://www.instagram.com/adventzentertainment?igsh=enFnMXphYXBkNDFu&utm_source=qr" class="font-weight-bold text-muted mr-4">
+                <i class="ti-instagram pr-1"></i>
+            </a>
+            <a href="https://youtube.com/@adventzadvertisementsevent4529?si=yTdW4RFhNWa_lZpv" class="font-weight-bold text-muted mr-4">
+                <i class="ti-youtube pr-1"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Second Navigation (Menu) -->
+<nav class="navbar custom-navbar navbar-expand-md navbar-light bg-white sticky-top">
+    <div class="container">
+        <!-- Logo section -->
+        <!-- <a class="navbar-brand" href="index.html">
+            <img src="./assets/imgs/logoad.png" alt="Logo" width="auto" height="auto">
+        </a> -->
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">                     
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./whatwedo.html">What we do</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./gallary.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacts.html">Contacts</a>
+                </li>
+                <!-- Login Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://sso.godaddy.com/?app=email&realm=pass&target=login&return_path=%252FoptionsSignatures.php&plid=1">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  
+
+    <!-- Services Section -->
+    <div class="services-section">
+        <h1>What We Do</h1>
+        <div class="services-container">
+            <!-- Card 1 -->
+            <div class="service-card">
+                <div class="service-icon">&#128188;</div> <!-- Placeholder icon -->
+                <h3 class="service-title">Events</h3>
+                <ul class="service-description">
+                    <li>Corporate Events</li>
+                    <li>Product Launches</li>
+                    <li>Conferences</li>
+                    <li>Seminars</li>
+                    <li>Fashion Shows</li>
+                    <li>Press Meets</li>
+                    <li>Award Ceremonies</li>
+                    <li>Dealer Meets</li>
+                </ul>
+              
+            </div>
+
+            <!-- Card 2 -->
+            <div class="service-card">
+                <div class="service-icon">&#128640;</div> <!-- Placeholder icon -->
+                <h3 class="service-title">Brand Activation</h3>
+                <ul class="service-description">
+                    <li>Promotions</li>
+                    <li>Road Shows</li>
+                    <li>Mall Activities</li>
+                    <li>Movie Promotions</li>
+                    <li>Store Activity</li>
+                    <li>Sales Promotions</li>
+                    <li>Door to Door Activities</li>
+                    <li>Rural Promotions</li>
+                </ul>
+             
+            </div>
+
+            <!-- Card 3 -->
+            <div class="service-card">
+                <div class="service-icon">&#127912;</div> <!-- Placeholder icon -->
+                <h3 class="service-title">Branding</h3>
+                <ul class="service-description">
+                    <li>In-Shop Branding</li>
+                    <li>Shop Gate Arches</li>
+                    <li>Front Lit Boards</li>
+                    <li>Acrylic ACP Boards</li>
+                    <li>Auto Ads</li>
+                    <li>Bus Ads</li>
+                    <li>Look Walkers</li>
+                </ul>
+           
+            </div>
+
+            <!-- Card 4 -->
+            <div class="service-card">
+                <div class="service-icon">&#128142;</div> <!-- Placeholder icon -->
+                <h3 class="service-title">Social Events</h3>
+                <ul class="service-description">
+                    <li>Birthday Parties</li>
+                    <li>Weddings & Associated Events</li>
+                </ul>
+           
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
+                    <img src="assets/imgs/logoad.png" alt="" class="logo" height="80px" width="120px">
+                </div>
+                <div class="col-md-9 text-center text-md-right">
+                    <div class="socials">
+                        <a href="https://www.facebook.com/share/1wzxVG8Vbr1dvMXo/?mibextid=LQQJ4d" class="font-weight-bold text-muted mr-4"><i class="ti-facebook pr-1"></i> </a>
+               
+                        <a href="https://www.instagram.com/adventzentertainment?igsh=enFnMXphYXBkNDFu&utm_source=qr" class="font-weight-bold text-muted mr-4"><i class="ti-instagram pr-1"></i> </a>
+                        <a href="https://youtube.com/@adventzadvertisementsevent4529?si=yTdW4RFhNWa_lZpv" class="font-weight-bold text-muted mr-4"><i class="ti-youtube pr-1"></i> </a>
+                    </div>
+                </div>  
+            </div>
+            <p class="border-top mb-0 mt-4 pt-3 small">&copy; <script>document.write(new Date().getFullYear())</script>,  Created By <a href="https://images.pexels.com/photos/28972138/pexels-photo-28972138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="text-muted font-weight-bold" target="_blank">7 Creators</a>  All rights reserved </p> 
+        </div>      
+    </footer>
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

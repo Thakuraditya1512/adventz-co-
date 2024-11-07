@@ -11693,7 +11693,7 @@ textarea.form-control {
 
 .page-header {
   position: relative;
-  background: url(../imgs/banner.jpg) no-repeat center top;
+  background: url(../imgs/new.jpeg) no-repeat center top;
   background-size: cover;
   height: 600px;
   display: flex;
@@ -11928,3 +11928,68 @@ section .section-secondary-title {
   opacity: .7;
   margin-bottom: 15px;
 }
+
+
+
+
+
+
+/* Keyframe animations for sliding effect */
+@keyframes slide1 {
+  0%, 50% { opacity: 1; transform: translateX(0); }
+  55%, 100% { opacity: 0; transform: translateX(-100%); }
+}
+
+@keyframes slide2 {
+  0%, 50% { opacity: 0; transform: translateX(100%); }
+  55%, 100% { opacity: 1; transform: translateX(0); }
+}
+
+
+
+.sid.page-header {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.slide1 {
+  background-image: url(../imgs/new.jpeg);
+  animation-name: slide1;
+}
+
+.slide2 {
+  background-image: url(../imgs/banner3.jpg);
+  animation-name: slide2;
+}
+
+
+
+.overlay-text {
+  position: relative;
+  z-index: 2; /* Ensure text is above images */
+}
+
+

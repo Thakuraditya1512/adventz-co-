@@ -197,26 +197,31 @@ h1 {
     color: #333;
     margin-bottom: 1rem;
 }
-
-.service-description {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.folder-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
 }
-
-.service-description li {
-    font-size: 0.9rem;
-    color: #555;
-    padding: 0.3rem 0;
-    transition: all 0.3s ease;
+.folder {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: 120px;
 }
-
-/* Hover effect to show all points */
-.service-card:hover .service-description li {
-    font-size: 1rem;
+.folder:hover {
+    transform: scale(1.15);
+}
+.folder-icon {
+    font-size: 5rem;
+    color: #3a7bd5;
+}
+.folder-name {
     font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
 }
-
 
 /* Photo gallery styling */
 .photo-gallery {
@@ -239,56 +244,23 @@ h1 {
     transform: scale(1.05);
 }
 
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1050; /* High z-index to overlay above everything */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
-    padding-top: 50px;
+.service-description {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.modal-content {
-    position: relative;
-    margin: auto;
-    padding: 20px;
-    max-width: 80%;
-    max-height: 50%;
-    background-color: #ffffff57;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    justify-items: center;
+.service-description li {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 0.3rem 0;
+    transition: all 0.3s ease;
 }
 
-.modal-image {
-    width: 100%;
-   /* Medium size */
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s;
-}
-
-.modal-image:hover {
-    transform: scale(1.05);
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    color: #ffffff;
-    font-size: 28px;
+/* Hover effect to show all points */
+.service-card:hover .service-description li {
+    font-size: 1rem;
     font-weight: bold;
-    cursor: pointer;
 }
 
 .service-button {
@@ -328,9 +300,6 @@ h1 {
     .service-icon {
         font-size: 2rem;
     }
-
-    
-
 
     .service-button {
         font-size: 0.85rem;
@@ -397,155 +366,94 @@ h1 {
         </div>
     </div>
 </nav>
-<div id="photoGallery" class="photo-gallery"></div>
 
-<!-- Services Section -->
-<div class="services-section">
-    <h1>What We Do</h1>
-    <div class="services-container">
-        <!-- Card 1 -->
-        <div class="service-card">
-            <div class="service-icon">&#128188;</div>
-            <h3 class="service-title">Events</h3>
-            <ul class="service-description">
-                <li>Corporate Events</li>
-                <li>Product Launches</li>
-                <li>Conferences</li>
-                <li>Seminars</li>
-                <li>Fashion Shows</li>
-                <li>Press Meets</li>
-                <li>Award Ceremonies</li>
-                <li>Dealer Meets</li>
-                <li><a href="#" onclick="showPhotos('folder1')">View Images</a></li>
-            </ul>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="service-card">
-            <div class="service-icon">&#128640;</div>
-            <h3 class="service-title">Brand Activation</h3>
-            <ul class="service-description">
-                <li>Promotions</li>
-                <li>Road Shows</li>
-                <li>Mall Activities</li>
-                <li>Movie Promotions</li>
-                <li>Store Activity</li>
-                <li>Sales Promotions</li>
-                <li>Door to Door Activities</li>
-                <li>Rural Promotions</li>
-                <li><a href="#" onclick="showPhotos('folder2')">View Images</a></li>
-            </ul>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="service-card">
-            <div class="service-icon">&#127912;</div>
-            <h3 class="service-title">Branding</h3>
-            <ul class="service-description">
-                <li>In-Shop Branding</li>
-                <li>Shop Gate Arches</li>
-                <li>Front Lit Boards</li>
-                <li>Acrylic ACP Boards</li>
-                <li>Auto Ads</li>
-                <li>Bus Ads</li>
-                <li>Look Walkers</li>
-                <li><a href="#" onclick="showPhotos('folder3')">View Images</a></li>
-            </ul>
-        </div>
 
-        <!-- Card 4 -->
-        <div class="service-card">
-            <div class="service-icon">&#128142;</div>
-            <h3 class="service-title">Social Events</h3>
-            <ul class="service-description">
-                <li>Birthday Parties</li>
-                <li>Weddings & Associated Events</li>
-                <li><a href="#" onclick="showPhotos('folder4')">View Images</a></li>
-            </ul>
-        </div>
+<h1> View Photos</h1>
+
+<!-- Folders -->
+<div class="folder-container">
+    <div class="folder" >
+        <div class="service-icon">&#128188;</div> 
+        <div class="folder-name">Events</div>
+    </div>
+    <div class="folder" onclick="showPhotos('folder2')">
+        <div class="service-icon">&#128640;</div>
+        <div class="folder-name">Brand Activation</div>
+    </div>
+    <div class="folder" onclick="showPhotos('folder3')">
+        <div class="service-icon">&#127912;</div>
+        <div class="folder-name">Branding</div>
     </div>
 </div>
 
-<!-- Modal for Image Gallery -->
-<div id="imageModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <div class="modal-content" id="modalContent"></div>
-</div>
+<!-- Photo Gallery -->
+<div id="photoGallery" class="photo-gallery"></div>
+
+<!-- Footer -->
 
 <script>
     // Function to show photos based on selected folder
     function showPhotos(folder) {
-        const modalContent = document.getElementById("modalContent");
-        modalContent.innerHTML = ""; // Clear existing photos
+        const photoGallery = document.getElementById("photoGallery");
+        photoGallery.innerHTML = ""; // Clear existing photos
 
         // Sample photo URLs for each folder (Replace with actual image paths)
         const photos = {
             folder1: [
-                'assets/imgs/99 (1).jpg',
-                'assets/imgs/99 (10).jpg',
-                'assets/imgs/99 (11).jpg'
+                'assets/imgs/12 (1).jpg',
+                'assets/imgs/12 (2).jpg',
+                'assets/imgs/12 (19).jpg'
             ],
             folder2: [
-                'assets/imgs/99 (14).jpg',
-                'assets/imgs/99 (12).jpg',
-                'assets/imgs/13 (5).jpg'
+            'assets/imgs/12 (1).jpg',
+            'assets/imgs/12 (15).jpg',
+            'assets/imgs/12 (14).jpg'
             ],
             folder3: [
-                'assets/imgs/12 (8).jpg',
-                'assets/imgs/12 (2).jpg',
-                'assets/imgs/12 (9).jpg'
-            ],
-            folder4: [
-                'assets/imgs/12 (3).jpg',
-                'assets/imgs/12 (4).jpg',
-                'assets/imgs/12 (5).jpg'
+            'assets/imgs/12 (8).jpg',
+            'assets/imgs/12 (2).jpg',
+            'assets/imgs/12 (9).jpg'
             ]
         };
 
-        // Populate modal with photos from the selected folder
+        // Populate gallery with photos from the selected folder
         if (photos[folder]) {
             photos[folder].forEach(url => {
                 const img = document.createElement("img");
                 img.src = url;
-                img.classList.add("modal-image");
-                modalContent.appendChild(img);
+                photoGallery.appendChild(img);
             });
         }
-
-        // Show the modal
-        document.getElementById("imageModal").style.display = "block";
-    }
-
-    // Function to close the modal
-    function closeModal() {
-        document.getElementById("imageModal").style.display = "none";
     }
 </script>
 
 
 
-
-
-    <!-- Footer -->
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
-                    <img src="./assets/imgs/1212.png" alt="" class="logo" height="80px" width="120px">
-                </div>
-                <div class="col-md-9 text-center text-md-right">
-                    <div class="socials">
-                        <a href="https://www.facebook.com/share/1wzxVG8Vbr1dvMXo/?mibextid=LQQJ4d" class="font-weight-bold text-muted mr-4"><i class="ti-facebook pr-1"></i> </a>
-               
-                        <a href="https://www.instagram.com/adventzentertainment?igsh=enFnMXphYXBkNDFu&utm_source=qr" class="font-weight-bold text-muted mr-4"><i class="ti-instagram pr-1"></i> </a>
-                        <a href="https://youtube.com/@adventzadvertisementsevent4529?si=yTdW4RFhNWa_lZpv" class="font-weight-bold text-muted mr-4"><i class="ti-youtube pr-1"></i> </a>
-                    </div>
-                </div>  
+ <!-- Footer -->
+ <footer class="page-footer">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
+                <img src="./assets/imgs/1212.png" alt="" class="logo" height="80px" width="120px">
             </div>
-            <p class="border-top mb-0 mt-4 pt-3 small">&copy; <script>document.write(new Date().getFullYear())</script>,  Created By <a href="https://images.pexels.com/photos/28972138/pexels-photo-28972138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="text-muted font-weight-bold" target="_blank">7 Creators</a>  All rights reserved </p> 
-        </div>      
-    </footer>
-    <script src="assets/vendors/jquery/jquery.min.js"></script>
-    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <div class="col-md-9 text-center text-md-right">
+                <div class="socials">
+                    <a href="https://www.facebook.com/share/1wzxVG8Vbr1dvMXo/?mibextid=LQQJ4d" class="font-weight-bold text-muted mr-4"><i class="ti-facebook pr-1"></i> </a>
+           
+                    <a href="https://www.instagram.com/adventzentertainment?igsh=enFnMXphYXBkNDFu&utm_source=qr" class="font-weight-bold text-muted mr-4"><i class="ti-instagram pr-1"></i> </a>
+                    <a href="https://youtube.com/@adventzadvertisementsevent4529?si=yTdW4RFhNWa_lZpv" class="font-weight-bold text-muted mr-4"><i class="ti-youtube pr-1"></i> </a>
+                </div>
+            </div>  
+        </div>
+        <p class="border-top mb-0 mt-4 pt-3 small">&copy; <script>document.write(new Date().getFullYear())</script>,  Created By <a href="https://images.pexels.com/photos/28972138/pexels-photo-28972138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="text-muted font-weight-bold" target="_blank">7 Creators</a>  All rights reserved </p> 
+    </div>      
+</footer>
+<script src="assets/vendors/jquery/jquery.min.js"></script>
+<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+
